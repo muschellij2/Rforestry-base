@@ -29,6 +29,10 @@ rcpp_AddTreeInterface <- function(forest, ntree) {
     invisible(.Call(`_Rforestry_rcpp_AddTreeInterface`, forest, ntree))
 }
 
+rcpp_ExportJson <- function(forestParamR) {
+    .Call(`_Rforestry_rcpp_ExportJson`, forestParamR)
+}
+
 rcpp_CppToR_translator <- function(forest) {
     .Call(`_Rforestry_rcpp_CppToR_translator`, forest)
 }

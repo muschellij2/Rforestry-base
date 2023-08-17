@@ -1225,6 +1225,22 @@ forestry <- function(x,
   return(forest)
 }
 
+# -- Export to Treelite JSON Function --------------------------------------------
+#' export_json
+#' @name export_json
+#' @rdname export_json
+#' @description Returns a JSON string representation of the forest. The JSON format aligns with the spec defined for import by the Treelite library.
+#' @param object A `forestry` object.
+#' @return A string containing Treelite JSON of the forest
+#' @export
+export_json <- function(object) {
+  tryCatch({
+    return(rcpp_ExportJson(object))
+  }, error = function(err) {
+    print(err)
+    return(NULL)
+  })
+}
 
 
 # -- Predict Method ------------------------------------------------------------
