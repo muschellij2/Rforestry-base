@@ -13,7 +13,7 @@ Rforestry is a fast implementation of Honest Random Forests, Gradient Boosting, 
 2. The [devtools](https://github.com/r-lib/devtools) package has to be installed. You can install it using,  `install.packages("devtools")`.
 3. The package contains compiled code, and you must have a development environment to install the development version. You can use `devtools::has_devel()` to check whether you do. If no development environment exists, Windows users download and install [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and macOS users download and install [Xcode](https://apps.apple.com/us/app/xcode/id497799835).
 4. The latest development version can then be installed using
-`devtools::install_github("forestry-labs/Rforestry")`. For Windows users, you'll need to skip 64-bit compilation `devtools::install_github("forestry-labs/Rforestry", INSTALL_opts = c('--no-multiarch'))` due to an outstanding gcc issue.
+`devtools::install_github("forestry-labs/Rforestry/R")`. For Windows users, you'll need to skip 64-bit compilation `devtools::install_github("forestry-labs/Rforestry/R", INSTALL_opts = c('--no-multiarch'))` due to an outstanding gcc issue.
 
 ## Documentation
 
