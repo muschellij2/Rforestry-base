@@ -6,7 +6,6 @@ on:
     paths:
       - "Python/**"
       - "R/**"
-      - "src/**"
       - "R/src/**"
       - "tests/cross_language/**"
       - ".github/workflows/cross_language_test.yaml"

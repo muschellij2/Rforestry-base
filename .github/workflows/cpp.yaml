@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-      - "src/**"
       - "R/src/**"
       - "tests/cpp/**"
       - ".github/workflows/cpp.yaml"
@@ -26,7 +25,7 @@ jobs:
           sudo tar -xf v2.1.2.tar.gz -C /
 
       - name: Lint
-        working-directory: src/
+        working-directory: R/src/
         run: |
           clang-tidy *.cpp -header-filter="^.*/src/.*" --use-color -- -Irapidjson/include -I/usr/lib/R/site-library/RcppArmadillo/include -I/usr/lib/R/site-library/Rcpp/include -I/usr/share/R/include -I/RcppThread-2.1.2/inst/include
   testing:
