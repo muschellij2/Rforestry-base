@@ -5,7 +5,7 @@
 [submodule "armadillo"]
 	path = Python/extension/include/armadillo
 	url = https://gitlab.com/conradsnicta/armadillo-code.git
-	branch = 12.2.x
+	branch = 12.4.x
 [submodule "catch2"]
 	path = tests/cpp/include/Catch2
 	url = https://github.com/catchorg/Catch2.git
